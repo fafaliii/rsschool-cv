@@ -1,4 +1,4 @@
-# **Александр Попович**
+# **Alexander Popovich**
 ----
 
 ## Junior Frontend Developer
@@ -23,7 +23,7 @@ I am learning at a high speed and am ready to assimilate a lot of information
 ----
 
 ### Education
-###### Kosygin State University first year student
+###### **Kosygin State University first year student**
 ----
 
 ### Code Example
