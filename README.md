@@ -1,1 +1,1 @@
-# https://fafaliii.github.io/rsschool-cv/cv
+# https://fafaliii.github.io/rsschool-cv/
