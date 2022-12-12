@@ -51,11 +51,135 @@
              
         </div>
       </header>
-<main class="main">
-    <div class="container">
+      <main class="main">
+        <section class="about-me">
+          <div class="about-me__bg--left"></div>
+          <div class="about-me__bg--right"></div>
+  
+          <div class="about-me__container container">
+            <div class="about-me__inner--left">
+              <h2 class="about-me__title"><b>About me</b></h2>
+              <h3 class="about-me__subtitle subtitle">A few words</h3>
+            </div>
+            <div class="about-me__inner--right">
+              <p> I have good personal qualities that help me work in a team, I constantly improve my skills and do not stand still, I am always ready to take on complex projects that I always finish in the right time.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="skills">
+            <div class="skills__bg--left"></div>
+            <div class="skills__bg--right"></div>
+
+            <div class="skills__container_sec container" id="1">
+                <h2 class="skills__title">Skills</h2>
+            </div>
+    
+            <div class="skills__container container" id="2">
+                <div class="skills__inner--left">
+                    <h2 class="skills__title">Hard</h2>
+                    <ul class="skills_list">
+                        <li>Python (beautifulsoup4, etc.)</li>
+                        <li>GoLang (Basic)</li>
+                        <li>Assembler (Basic)</li>
+                        <li>JavaScript (Basic)</li>
+                        <li>Git, GitHub</li>
+                        <li>HTML/CSS</li>
+                        <li>FIGMA</li>  
+                    </ul>
+                </div>
+                <div class="skills__inner--right">
+                    <h2 class="skills__title">Soft</h2>
+                    <ul class="skills_list">
+                        <li>Communication skills</li>
+                        <li>Problem solving</li>
+                        <li>Teamwork/collaboration</li>
+                        <li>Research</li>
+                        <li>Creativity</li>
+                        <li>English B1</li>
+                      </ul>
+                </div>
+                
+
+    
+            </div>
+        </section>
+  
+        <section class="code-example">
+          <div class="code-example__bg--left"></div>
+          <div class="code-example__bg--right"></div>
+          <div class="code-example__container container">
+            <div class="code-example__inner--left">
+              <h2 class="code-example__title"><b>Code example</b></h2>
+              <h3 class="code-example__subtitle subtitle">From random task</h3>
+            </div>
+            <div class="code-example__inner--right">
+              <pre>
+        <code>
+          function decode(expr) {
+            const splitedExpr = expr.split('');
+            let stash = [];
+            let result = [];
+          
+            function recursion(startIndex, endIndex) {
+              stash = [];
+          
+              if (startIndex === expr.length) return;
+          
+              for (let i = startIndex; i &lt; endIndex; i = i + 2) {
+                if (splitedExpr[i] + splitedExpr[i + 1] === '10') stash.push('.');
+          
+                if (splitedExpr[i] + splitedExpr[i + 1] === '11') stash.push('-');
+          
+                if (splitedExpr[i] === '*') {
+                  result.push(' ');
+                  return recursion(startIndex + 10, endIndex + 10);
+                }
+              }
+          
+              for (key in MORSE_TABLE) {
+                if (key === stash.join('')) {
+                  result.push(MORSE_TABLE[key]);
+                } 
+              }
+              recursion(startIndex + 10, endIndex + 10);
+            }
+          
+            recursion(0, 10);
+          
+            return result.join('');
+          }
+        </code>
+    </pre>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main_education">
+            <ul class="main_education">
+                <li class="header_education-item" id="1">
+                    <h2>Education:</h2>
+                    <p><a href="https://kosygin-rgu.ru/">Kosygin State University</a></p>
+                    <p>first year student</p>
+                </li>
+                <li class="header_education-item" id="2">
+                    <h2>English:</h2>
+                    <p>I practice every day and</p>
+                    <p>try to improve my level</p>
+                </li>
+                <li class="header_education-item" id="3">
+                    <h2>courses:</h2>
+                    <p><a href="https://rs.school/js/">Js/Fe pre-school</a></p>
+                    <p><a href="https://rs.school/js/">2022q4 RSSchool</a></p>
+                </li>
+            </ul>
+             
+          </div>
+        </section>
+
+  
         
-    </div>
-</main>
+      </main>
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__inner--top">
@@ -66,6 +190,7 @@
                 <li class="footer__item"><a class="footer__link footer__link--vk" href="https://vk.com/id458262766"></a></li>
 
             </ul>
+            <p class="year">2022</p>
         </div>
 
     </div>
