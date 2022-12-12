@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    </style>
+    <title>CV</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="header__bg--left"></div>
+        <div class="header__bg--right"></div>
+  
+        <div class="header__container container">
+          <div class="header__inner--left">
+            <img src="myphoto.png" alt="avatar">
+          </div>
+  
+          <div class="header__inner--right">
+            <div class="header__content">
+              <h1 class="header__title"><span>Alexander</span> Popovich</h1>
+              <h3 class="header__subtitle">Front-end web developer</h3>
+              
+            </div>
+          </div>
+        
+        </div>
+        <div class="header_contacts">
+            <ul class="header__contacts">
+                <li class="header__contacts-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:Popovicha154@mail.ru">Popovicha154@mail.ru</a></p>
+                </li>
+                <li class="header__contacts-item">
+                    <h4>Phone number</h4>
+                    <p>+7 (963) 787-15-09</p>
+                </li>
+                <li class="header__contacts-item">
+                    <h4>Discord</h4>
+                    <p>fafali#3453</p>
+                </li>
+            </ul>
+             
+        </div>
+      </header>
+      <main class="main">
+        <section class="about-me">
+          <div class="about-me__bg--left"></div>
+          <div class="about-me__bg--right"></div>
+  
+          <div class="about-me__container container">
+            <div class="about-me__inner--left">
+              <h2 class="about-me__title"><b>About me</b></h2>
+              <h3 class="about-me__subtitle subtitle">A few words</h3>
+            </div>
+            <div class="about-me__inner--right">
+              <p> I have good personal qualities that help me work in a team, I constantly improve my skills and do not stand still, I am always ready to take on complex projects that I always finish in the right time.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="skills">
+            <div class="skills__bg--left"></div>
+            <div class="skills__bg--right"></div>
+
+            <div class="skills__container_sec container" id="1">
+                <h2 class="skills__title">Skills</h2>
+            </div>
+    
+            <div class="skills__container container" id="2">
+                <div class="skills__inner--left">
+                    <h2 class="skills__title">Hard</h2>
+                    <ul class="skills_list">
+                        <li>Python (beautifulsoup4, etc.)</li>
+                        <li>GoLang (Basic)</li>
+                        <li>Assembler (Basic)</li>
+                        <li>JavaScript (Basic)</li>
+                        <li>Git, GitHub</li>
+                        <li>HTML/CSS</li>
+                        <li>FIGMA</li>  
+                    </ul>
+                </div>
+                <div class="skills__inner--right">
+                    <h2 class="skills__title">Soft</h2>
+                    <ul class="skills_list">
+                        <li>Communication skills</li>
+                        <li>Problem solving</li>
+                        <li>Teamwork/collaboration</li>
+                        <li>Research</li>
+                        <li>Creativity</li>
+                        <li>English B1</li>
+                      </ul>
+                </div>
+                
+
+    
+            </div>
+        </section>
+  
+        <section class="code-example">
+          <div class="code-example__bg--left"></div>
+          <div class="code-example__bg--right"></div>
+          <div class="code-example__container container">
+            <div class="code-example__inner--left">
+              <h2 class="code-example__title"><b>Code example</b></h2>
+              <h3 class="code-example__subtitle subtitle">From random task</h3>
+            </div>
+            <div class="code-example__inner--right">
+              <pre>
+        <code>
+          function decode(expr) {
+            const splitedExpr = expr.split('');
+            let stash = [];
+            let result = [];
+          
+            function recursion(startIndex, endIndex) {
+              stash = [];
+          
+              if (startIndex === expr.length) return;
+          
+              for (let i = startIndex; i &lt; endIndex; i = i + 2) {
+                if (splitedExpr[i] + splitedExpr[i + 1] === '10') stash.push('.');
+          
+                if (splitedExpr[i] + splitedExpr[i + 1] === '11') stash.push('-');
+          
+                if (splitedExpr[i] === '*') {
+                  result.push(' ');
+                  return recursion(startIndex + 10, endIndex + 10);
+                }
+              }
+          
+              for (key in MORSE_TABLE) {
+                if (key === stash.join('')) {
+                  result.push(MORSE_TABLE[key]);
+                } 
+              }
+              recursion(startIndex + 10, endIndex + 10);
+            }
+          
+            recursion(0, 10);
+          
+            return result.join('');
+          }
+        </code>
+    </pre>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main_education">
+            <ul class="main_education">
+                <li class="header_education-item" id="1">
+                    <h2>Education:</h2>
+                    <p><a href="https://kosygin-rgu.ru/">Kosygin State University</a></p>
+                    <p>first year student</p>
+                </li>
+                <li class="header_education-item" id="2">
+                    <h2>English:</h2>
+                    <p>I practice every day and</p>
+                    <p>try to improve my level</p>
+                </li>
+                <li class="header_education-item" id="3">
+                    <h2>courses:</h2>
+                    <p><a href="https://rs.school/js/">Js/Fe pre-school</a></p>
+                    <p><a href="https://rs.school/js/">2022q4 RSSchool</a></p>
+                </li>
+            </ul>
+             
+          </div>
+        </section>
+
+  
+        
+      </main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__inner--top">
+            <ul class="footer__links">
+                <li class="footer__item"><a class="footer__link footer__link--github"
+                    href="https://github.com/fafaliii"></a></li>
+                <li class="footer__item"><a class="footer__link footer__link--rsschool" href="https://rs.school/js/"></a></li>
+                <li class="footer__item"><a class="footer__link footer__link--vk" href="https://vk.com/id458262766"></a></li>
+
+            </ul>
+            <p class="year">2022</p>
+        </div>
+
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
